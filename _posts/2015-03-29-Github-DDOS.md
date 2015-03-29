@@ -2,7 +2,7 @@
 layout:     post
 title:      Working With Git While Github is Down
 date:       2015-03-29 4:00:00
-summary:    The Github DDOS attach inspired me to play around with git a bit.
+summary:    The Github DDOS attack inspired me to play around with git a bit.
 ---
 
 So [github is down](https://github.com/blog/1981-large-scale-ddos-attack-on-github-com) for the time being which is inconvenient.
