@@ -1,3 +1,5 @@
 This is my personal website.
 
-The theme is from [pixyll](https://github.com/johnotander/pixyll) by John Otander
+The theme is inspired by the [Manjaro Project's](https://manjaro.github.io/) theme.
+
+[http://jonathanhooper.net](http://jonathanhooper.net)

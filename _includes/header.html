@@ -1,14 +1,20 @@
-<header class="site-header px2 px-responsive">
-  <div class="mt2 wrap">
-    <div class="measure">
-      <a href="{{ site.url }}" class="site-title">{{ site.title }}</a>
-      <nav class="site-nav right">
-        {% include navigation.html %}
+<header class="site-header">
+  <div class="header-wrap">
+    <div class="container">
+      <a class="brand" href="{{ site.url }}">
+        <img src="/images/avatar.jpg">
+        <h1>
+          Jonathan Hooper
+        </h1>
+      </a>
+      <nav>
+          <a href="/">Home</a>
+          <a href="{{ site.github_url }}" target="_blank">Github</a>
+          <a href="{{ site.stack_overflow_url }}" target="_blank">Stack Overflow</a>
+          <a href="{{ site.twitter_url }}" target="_blank">Twitter</a>
+          <a href="mailto:{{ site.email_address }}" target="_blank">Email</a>
       </nav>
-      <div class="clearfix"></div>
-      {% if site.show_social_icons %}
-        {% include social_links.html %}
-      {% endif %}
     </div>
   </div>
+  <div class="header-spacer"></div>
 </header>
