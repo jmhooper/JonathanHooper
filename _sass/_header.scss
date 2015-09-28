@@ -63,3 +63,40 @@ nav {
     text-shadow: 1px 1px 3px #000;
   }
 }
+
+@media only screen and (max-width : $mobile_breakpoint) {
+  div.header-wrap {
+    height: auto;
+    padding: 7.5px 0px 5px 0px;
+  }
+
+  a.brand {
+    height: auto;
+    padding: 0;
+
+    h1 {
+      float: none;
+      margin: 7.5px 0;
+      font-size: 26px;
+    }
+
+    img {
+      display: block;
+      margin: 7.5px 0;
+      float: none;
+      height: 80px;
+      border-radius: 40px;
+    }
+  }
+
+  nav {
+    float: none;
+    width: 100%;
+    margin: 0 0 12px 0;
+
+    a {
+      display: block;
+      padding: 2px 0px;
+    }
+  }
+}

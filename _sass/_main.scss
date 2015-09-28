@@ -59,6 +59,8 @@ $light_grey_color: #CCC;
 $dark_grey_color: #333;
 $green_color: #2ECC71;
 
+$mobile_breakpoint: 600px;
+
 * {
   margin: 0;
   padding: 0;
@@ -119,6 +121,7 @@ img {
 }
 
 .highlight {
+  overflow: scroll;
   padding: 1px 10px;
 }
 
@@ -133,4 +136,35 @@ div.row {
     margin: 12.5px 0px;
   }
   
+}
+
+@media only screen and (max-width : $mobile_breakpoint) {
+  .container {
+    width: 94%;
+    margin: 0% 3%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }
