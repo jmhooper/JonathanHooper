@@ -1,21 +1,6 @@
-# Site settings
-title:       JonathanHooper
-email:       jon@jonathanhooper.net
-description: Personal website of Jonathan Hooper
-baseurl:     ""
-url:         "http://jonathanhooper.net"
-
-# Social
-github_url: https://github.com/jmhooper
-stack_overflow_url: http://stackoverflow.com/users/882250/jonathan
-twitter_url: https://twitter.com/Jonathan_Hooper
-email_address: jon@jonathanhooper.net
-
-# Build settings
 markdown:     redcarpet
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
-paginate:     5
 sass:
   compressed: true

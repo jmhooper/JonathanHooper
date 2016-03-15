@@ -1,170 +1,73 @@
-/*
-  ................................................................................
-  ................................................................................
-  ................................................................................
-  ................................................................................
-  ................................................................................
-  ...................................~I$$$$7$$$77=................................
-  ...........................,.I77777II??++++++?II777I~...........................
-  .........................:777II+++++++=========++++?I77+........................
-  .......................?I7I++++====================++++?II~.....................
-  .....................I77?+++===========================++?I7I,..................
-  ...................+77I+++===============================+++I$+.................
-  .................:I77?+===================================++++I7................
-  ................II7?++=============+=======================++++?7+..............
-  ...............I7I++++==++===========================+++++++++++?$7.............
-  ..............I7I++++++++++++++++++++==+=========+++++++=+?$8MMND+77............
-  .............I$?MMMMMMMMMMM87+++++++++++======++++?DMMMMMMMNMMMMMN?I7,..........
-  ............77?MNMMMMMMMMMMMMMMMMO+?+++++++++++8MMMMMMMMMMMMMMMMM7++I$..........
-  ...........+$?+MMMMMMMMMMMMMMMMMMMMMMNI?++?+MMMMMMNMMMMMMMMMMMMMD=+++7$.........
-  ...........$?+++MMMMMMMMMMMMMMMMMNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMM=++++?$?........
-  ..........77++++?MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM=++++?I$........
-  ..........Z?++++=MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM++++++?Z,.......
-  .........77+++++=MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM++++++?I7.......
-  .........$I++++++MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM+=+++++?Z.......
-  .........Z?+++++++MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM=+++++++?Z.......
-  ........,Z?++++++=NMMMMMMMMMMMMMMMMMMMMNM+?MMMMMMMMMMMMMMMMMMM+=+++++++?Z:......
-  ........:$?++++++++NMMMMMMMMMMMMMMMMMMMN+=++MMMMMMMMMMMMMMMMM=+++++++++?Z:......
-  ........,Z?++++++++++MMMNMMMMMMMMMMMMO==+++++ZMMMMMMMMMMMMN++++++++++++?Z,......
-  ........,Z?+++++++++++++ZDNMMMMMNO+++++=++++++++IDNMMMZ?+++++++++++++++?Z.......
-  .........Z?+++++++++++++++++++++++++++++++=++++++=+++++++++=+++++++++++IZ.......
-  .........?I?++++++++++++++++=+++=++++++++++++++++++++++?+++++++++++++++?:.......
-  ..........$?++++++++++++++=++++++++++=++=+++++++++++++IZI+++++++++++++?I........
-  ..........$I+++++++++++++=+++?++++++++++++++++++++++?IO$O=++++++++++++?7........
-  ..........,7?++++++++++++++=OOOI?++++++++++++++++??ZOO88+++++++++++++?I=........
-  ...........?I+++++++++++++++IOOOOOZI????++?????IOOOOOO?++=++++++++++??I.........
-  ............7I+++++++++++++=++?ZOOOOOOOOOOOOOOZOOO87?++++++++++++++??I..........
-  ............,$I?+++++++++++=++++?I7ZOOOOOOOOOOO$I?++++++++++++++++??I...........
-  ..............$?++++++++++++++=++++???????????+++++++++++++++++++?II............
-  ...............=?+++++++++++++++++++++++++++++++++++++++++++++++?I:.............
-  ................~I+++++++++++++++++++++++++++++++++++++++++++++?7,..............
-  .................,I++++=+==+++++++++++++++++++++++++++++++++++I7,...............
-  ...................~I?++===++++++++++++++++++++++++++++++++++7I.................
-  .....................??+++=======++++++++++++++++++++++++++7?,..................
-  .......................,I?++=+=======++++++++++++++++++++7~,....................
-  .........................,:??++++++=+++++++++++++++++?7Z,.......................
-  .............................,~II+++++++++++++??I7$$+,..........................
-  ..................................,,=I7$7$$$7=:,,...............................
-  ................................................................................
-  ................................................................................
-  ................................................................................
-  ................................................................................
-  ................................................................................
-  
-  Theme inspired by Manjaro Project: https://manjaro.github.io/
-*/
-
-$grey_color: #888;
-$light_grey_color: #CCC;
-$dark_grey_color: #333;
-$green_color: #2ECC71;
-
-$mobile_breakpoint: 600px;
-
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Droid Sans', sans-serif;
 }
 
-body {
-  color: $dark_grey_color;
-}
-
-a {
-  color: $green_color;
-  text-decoration: underline;
-}
-
-h1 {
-  font-weight: bold;
-  font-size: 30px;
-}
-
-h2 {
-  font-weight: bold;
-  font-size: 27px;
-}
-
-h3 {
-  font-weight: bold;
+html {
+  color: $white-color;
+  font-family: Share, sans-serif;
   font-size: 24px;
 }
 
+body {
+  background-color: $black-color;
+  background-image: url(/images/background.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1, h2, h3, h4, h5, p, ul {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: $brand-color;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
 h4 {
-  font-weight: bold;
-  font-size: 21px;
+  font-size: 1.5rem;
 }
 
 h5 {
-  font-weight: bold;
-  font-size: 18px;
+  font-size: 1rem
 }
 
-p {
-  font-size: 18px;
-  font-weight: lighter;
+a {
+  color: $brand-color;
 }
 
-footer {
-  height: 50px;
+ul {
+  margin-left: 1rem;
 }
 
 img {
   max-width: 100%;
-  border: 1px solid $dark_grey_color;
+  border: 1px solid $black-color;
 }
 
-.container {
-  width: 66%;
-  margin: 0% 17%;
+div#content {
+  margin-top: 96px;
+  padding: ($horizontal-padding-full / 2) $horizontal-padding-full 1rem $horizontal-padding-full;
 }
 
-.highlight {
-  overflow: scroll;
-  padding: 1px 10px;
-}
-
-div.row {
-  margin: 30px 0px;
-
-  h1, h2, h3, h5, h5 {
-    margin-top: 40px;
-  }
-
-  * {
-    margin: 12.5px 0px;
-  }
-  
-}
-
-@media only screen and (max-width : $mobile_breakpoint) {
-  .container {
-    width: 94%;
-    margin: 0% 3%;
-  }
-
-  h1 {
-    font-size: 24px;
-  }
-
-  h2 {
-    font-size: 22px;
-  }
-
-  h3 {
+@media screen and (max-width: $horizontal-breakpoint) {
+  html {
     font-size: 20px;
   }
 
-  h4 {
-    font-size: 18px;
-  }
-
-  h5 {
-    font-size: 16px;
-  }
-
-  p {
-    font-size: 16px;
+  div#content {
+    padding: $horizontal-padding-mobile;
   }
 }

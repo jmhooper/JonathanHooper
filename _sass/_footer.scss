@@ -1,0 +1,17 @@
+footer {
+  padding: 0 $horizontal-padding-full;
+  margin-bottom: 96px;
+
+  a {
+    img {
+      margin-right: 4px;
+      border-color: transparent;
+    }
+  }
+}
+
+@media screen and (max-width: $horizontal-breakpoint) {
+  footer {
+    padding: 0 $horizontal-padding-mobile;
+  }
+}

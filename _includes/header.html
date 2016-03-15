@@ -1,20 +1,15 @@
-<header class="site-header">
-  <div class="header-wrap">
-    <div class="container">
-      <a class="brand" href="{{ site.url }}">
-        <img src="/images/avatar.jpg">
-        <h1>
-          Jonathan Hooper
-        </h1>
-      </a>
-      <nav>
-          <a href="/">Home</a>
-          <a href="{{ site.github_url }}" target="_blank">Github</a>
-          <a href="{{ site.stack_overflow_url }}" target="_blank">Stack Overflow</a>
-          <a href="{{ site.twitter_url }}" target="_blank">Twitter</a>
-          <a href="mailto:{{ site.email_address }}" target="_blank">Email</a>
-      </nav>
-    </div>
+<header>
+  <div id="header-inner">
+    <h1 id="brand">
+      <a href="/">JH</a>
+    </h1>
+    <img id="header-icon" src="/images/icons/hamburger.svg">
+    <nav>
+      <ul>
+        <li {% if page.activeTab == "index" %}class="active" {% endif %} ><a href="/">Home</a></li>
+        <li {% if page.activeTab == "portfolio" %}class="active" {% endif %} ><a href="/portfolio">Portfolio</a></li>
+        <li {% if page.activeTab == "resume" %}class="active" {% endif %} ><a href="/resume">Resume</a></li>
+      </ul>
+    </nav>
   </div>
-  <div class="header-spacer"></div>
 </header>
