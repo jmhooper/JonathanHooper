@@ -19,6 +19,17 @@ TapWater is an iOS application built to help users track how much water they dri
 - [iOS Source Code](https://github.com/jmhooper/TapWater)
 - [Marketing Site Source Code](https://github.com/jmhooper/TapWater-Site)
 
+## Baton Rouge Animal Control Incidents
+
+<img src="/images/portfolio/br-animal-control-incidents-logo.png">
+
+This web application allows you to view animal control incidents that have occurred in East Baton Rouge Parish. Incidents can be filtered by date and by whether the incident involved a cat or a dog.
+
+This app uses [Baton Rouge Open Data](https://data.brla.gov/) to download animal control incidents.
+
+- [AnimalIncidentsBR.com](http://animalincidentsbr.com)
+- [Source Code](https://github.com/jmhooper/br-animal-control-watch)
+
 ## BRewge
 
 <img src="/images/portfolio/brewge-logo.png">
