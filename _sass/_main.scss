@@ -1,73 +1,85 @@
-* {
+html {
+  font-family: Lato;
+  font-size: 24px;
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  display: flex;
+  flex-flow: column wrap;
   margin: 0;
   padding: 0;
 }
 
-html {
-  color: $white-color;
-  font-family: Share, sans-serif;
-  font-size: 24px;
-}
-
-body {
-  background-color: $black-color;
-  background-image: url(/images/background.png);
-  background-attachment: fixed;
-  background-size: cover;
-}
-
 h1, h2, h3, h4, h5, p, ul {
-  margin-bottom: 1rem;
-}
-
-a {
-  color: $brand-color;
+  margin: 0.75em 0 0.25rem 0;
 }
 
 h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
   font-size: 2rem;
 }
 
+h2 {
+  font-size: 1.64rem;
+}
+
+h3 {
+  font-size: 1.36rem;
+}
+
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.16rem;
 }
 
 h5 {
-  font-size: 1rem
+  font-size: 1.04rem;
+}
+
+p {
+  font-size: 1rem;
 }
 
 a {
-  color: $brand-color;
-}
-
-ul {
-  margin-left: 1rem;
+  text-decoration: underline;
 }
 
 img {
-  max-width: 100%;
   border: 1px solid $black-color;
 }
 
-div#content {
-  margin-top: 96px;
-  padding: ($horizontal-padding-full / 2) $horizontal-padding-full 1rem $horizontal-padding-full;
+.row {
+  display: flex;
+  flex-flow: column wrap;
+  min-height: 80vh;
+  justify-content: center;
+  padding: 10vh 96px;
 }
 
-@media screen and (max-width: $horizontal-breakpoint) {
-  html {
-    font-size: 20px;
+@media screen and (max-width: $mobile-breakpoint) {
+  .row {
+    padding: 10vh 16px;
   }
+}
 
-  div#content {
-    padding: $horizontal-padding-mobile;
+.white-on-blue {
+  background-color: $brand-color;
+  color: $white-color;
+
+  a {
+    color: $white-color;
+  }
+}
+
+.black-on-white {
+  background-color: $white-color;
+  color: $black-color;
+
+  a {
+    color: $brand-color;
   }
 }
