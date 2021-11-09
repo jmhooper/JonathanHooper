@@ -5,6 +5,5 @@ exclude:
   - .gitgnore
   - Gemfile
   - README.md
-  - _scripts/
   - vendor/
   - .bundle/
