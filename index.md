@@ -1,7 +1,9 @@
 ---
-layout: home
+layout: default
 permalink: /
 ---
+
+<img class='avatar' src='/images/avatar.jpg'/>
 
 # Hello!
 
