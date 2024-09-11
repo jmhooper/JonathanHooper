@@ -2,7 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Hello!</title>
+    <title>
+    {% if page.title %}
+      {{ page.title | prepend: 'Jonathan Hooper - ' }}
+    {% else %}
+      Jonathan Hooper
+    {% endif %}
+    </title>
     <meta name="description" content="My personal website">
     <meta name="author" content="Jonathan Hooper">
     <link rel="stylesheet" href=/css/styles.css type="text/css">
