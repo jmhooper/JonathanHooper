@@ -1,0 +1,77 @@
+<style>
+  body {
+    font-family: sans-serif;
+    max-width: 950px;
+    margin: 2rem auto;
+    padding: 2rem;
+  }
+
+  .output {
+    font-family: monospace;
+    background-color: lightgray;
+    border: 1px dotted black;
+    width: 100%;
+    min-height: 5.5rem;
+  }
+
+  .output pre {
+    padding: 1rem;
+  }
+</style>
+
+<body>
+  <a id="the-button" href="#">Click me to enroll a credential</a>
+
+  <p>Results:</p>
+  <div class="output">
+    <pre></pre>
+  </div>
+</body>
+
+<script>
+  function writeOutput(output) {
+    var outputNode = document.querySelector('.output pre');
+    outputNode.innerHTML = output;
+  }
+
+  function testPrf() {
+    console.log('getting credential')
+    navigator.credentials.create({
+      publicKey: {
+        timeout: 60000,
+        challenge: new Uint8Array([
+            // must be a cryptographically random number sent from a server. Don't use dummy
+            // values in real authentication situations.
+            1,2,3,4
+        ]).buffer,
+        rp: { name: 'Demo' },
+        user: {
+          id: new Uint8Array([
+              // must be a cryptographically random number sent from a server. Don't use dummy
+              // values in real authentication situations.
+              1,2,3,4
+          ]).buffer,
+          name: 'demo@example.com',
+          displayName: 'Demo User',
+        },
+        pubKeyCredParams: [{ type: 'public-key', alg: -7 }],
+        extensions: {prf: {eval: {first: new TextEncoder().encode("Foo encryption key")}}},
+      },
+    }).then((c) => {
+      result = c.getClientExtensionResults()
+      writeOutput(
+        JSON.stringify(result, null, 2),
+      );
+    }).catch((e) => {
+      writeOutput(
+        JSON.stringify(e, null, 2),
+      );
+    });
+  }
+
+  var button = document.querySelector('#the-button')
+  button.onclick = function(event) {
+    event.preventDefault();
+    testPrf();
+  }
+</script>
